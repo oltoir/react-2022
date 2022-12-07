@@ -1,6 +1,15 @@
+import {Box} from "@chakra-ui/react";
+import {PageTitle} from "components/PageTitle/index";
+import { ScheduleTable } from "pages/Schedule/libs/index";
+
 function SchedulePage(){
     return(
-        <div>Schedule</div>
+        <>
+            <Box p='32px'>
+                <PageTitle title='Расписание'/>
+                <ScheduleTable/>
+            </Box>
+        </>
     )
 }
 
