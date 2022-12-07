@@ -4,12 +4,10 @@ import { ScheduleTable } from "pages/Schedule/libs/index";
 
 function SchedulePage(){
     return(
-        <>
-            <Box p='32px'>
-                <PageTitle title='Расписание'/>
-                <ScheduleTable/>
-            </Box>
-        </>
+        <Box p='32px'>
+            <PageTitle title='Расписание'/>
+            <ScheduleTable/>
+        </Box>
     )
 }
 
