@@ -10,6 +10,8 @@ import LoadingTemplate from 'templates/LoadingTemplate';
 
 const NewsPage = lazy(()=>import('pages/News'))
 const TestPage = lazy(()=>import('pages/Test'))
+const SchedulePage = lazy(()=>import('pages/Schedule'))
+const AccountPage = lazy(()=>import('pages/Account'))
 
 function RootRouterWrap() {
 
@@ -21,6 +23,14 @@ function RootRouterWrap() {
         {
             path: '/test',
             element: <TestPage/>
+        },
+        {
+            path: '/schedule',
+            element: <SchedulePage/>
+        },
+        {
+            path: '/account',
+            element: <AccountPage/>
         }
     ]
 
