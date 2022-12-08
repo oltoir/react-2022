@@ -13,7 +13,7 @@ export function Header(){
             position='fixed'
             px='200px'
         >
-            <Link href='/'>
+            <Link href='/news'>
                 <Text fontWeight='semibold'>Новости</Text>
             </Link>
             <Link href='/schedule'>

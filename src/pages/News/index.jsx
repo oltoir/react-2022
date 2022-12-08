@@ -1,5 +1,6 @@
 import React from 'react';
 import {Flex, Box, Text, Image} from "@chakra-ui/react";
+import {Link} from 'react-router-dom'
 import {ChatIcon, AddIcon, RepeatClockIcon, ChevronUpIcon, ChevronDownIcon} from "@chakra-ui/icons";
 import {useNews} from "store/B2B";
 
@@ -19,7 +20,7 @@ function NewsPage(){
                     <Box color={'blue'}>Подписаться</Box>
                 </Flex>
                 <Flex justifyContent='space-between' alignItems='center'  flexDirection='column' width={1000}>
-                    <Box><Text fontSize='30px'>{item.title}</Text></Box>
+                    <Box><Text fontSize='30px'><Link to={`/news/${item.id}`}>{item.title}</Link></Text></Box>
 
                     <Box><Text fontSize='15px'>{item.description}</Text></Box>
                     <Box> <Image src={item.avatar} alt='Dan Abramov' /></Box>

@@ -4,6 +4,7 @@ import {
     useRoutes,
 } from 'react-router-dom';
 import LoadingTemplate from 'templates/LoadingTemplate';
+import NewsDetailPage from "../pages/NewsDetail";
 
 const NewsPage = lazy(()=>import('pages/News'))
 const TestPage = lazy(()=>import('pages/Test'))
@@ -14,8 +15,12 @@ function RootRouterWrap() {
 
     const routes = [
         {
-            path: '/',
+            path: '/news',
             element: <NewsPage/>
+        },
+        {
+            path: '/news/:id',
+            element: <NewsDetailPage/>
         },
         {
             path: '/test',
