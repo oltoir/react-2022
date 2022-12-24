@@ -10,7 +10,7 @@ function NewsDetailPage(){
   const {data: news, isLoading} = useNews()
 
   const {id} = useParams();
-  console.log(id, news)
+
   const item = news?.find((item)=>item.id === id)
 
   if(isLoading) return <div>loading</div>
